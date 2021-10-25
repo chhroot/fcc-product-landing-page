@@ -24,7 +24,7 @@ body {
 
 .bass {
   font-style: italic;
-  color:  rgb(30,215,96);
+  color: rgb(30, 215, 96);
 }
 
 li,
@@ -58,12 +58,12 @@ header {
 }
 
 .nav-links li a:hover {
-  color: rgb(30,215,96);
+  color: rgb(30, 215, 96);
 }
 
 button {
   padding: 9px 25px;
-  background-color: rgba(30,215,96,1);
+  background-color: rgba(30, 215, 96, 1);
   transition: all 0.3s ease 0s;
   border: none;
   cursor: pointer;
@@ -71,12 +71,13 @@ button {
 }
 
 button:hover {
-  background-color: rgba(30,215,96,0.7);
+  background-color: rgba(30, 215, 96, 0.7);
 }
 
 h2 {
   color: azure;
   font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: center;
 }
 
 .hero {
@@ -110,7 +111,7 @@ input[type="email"]::placeholder {
 }
 
 input[type="email"]:focus {
-  border: 2px solid rgb(30,215,96);
+  border: 2px solid rgb(30, 215, 96);
   outline: none;
 }
 
@@ -118,25 +119,35 @@ input[type="email"]:focus {
   border-radius: 10px;
 }
 
-img{
-  width: 200px;
-  height: auto;
-}
+/* img{
+  width: 100px;
+  height: 100px;
+} */
 
-.container{
-  margin-top: 80px;
+.container {
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 70px;
-}
-
-.info{
-  max-width: 200px;
-}
-
-.text{
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.info {
+  max-width: 200px;
+  transition: transform 0.2s;
+}
+
+.info:hover {
+  transform: scale(1.1);
+}
+.text {
   font-size: 16px;
   color: azure;
   font-family: "Montserrat", Helvetica, sans-serif;
