@@ -117,3 +117,28 @@ input[type="email"]:focus {
 .slap-button {
   border-radius: 10px;
 }
+
+img{
+  width: 200px;
+  height: auto;
+}
+
+.container{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.info{
+  max-width: 200px;
+}
+
+.text{
+  text-align: center;
+  font-size: 16px;
+  color: azure;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  padding: 20px 0;
+}
