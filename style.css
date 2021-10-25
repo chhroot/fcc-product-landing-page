@@ -10,8 +10,6 @@ body {
   background-color: #24252a;
 }
 
-#wrapper {
-}
 
 .logo {
   font-family: "Montserrat", Helvetica, sans-serif;
@@ -134,7 +132,7 @@ input[type="email"]:focus {
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .container, #pricing{
     flex-direction: column;
   }
 }
@@ -142,6 +140,7 @@ input[type="email"]:focus {
 .info {
   max-width: 200px;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .info:hover {
@@ -152,4 +151,78 @@ input[type="email"]:focus {
   color: azure;
   font-family: "Montserrat", Helvetica, sans-serif;
   padding: 20px 0;
+}
+
+#pricing{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.product{
+  border: 2px solid azure;
+  border-radius: 15px;
+  
+}
+
+.product-content{
+  padding: 70px 60px ;
+}
+
+.product-name{
+  color: azure;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0px 5px 0px;
+
+}
+
+.buy-btn{
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.list-content{
+  margin-top: 40px;
+}
+
+.list-content li{
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.footer{
+  margin-top: 40px;
+  background-color:rgba(30, 215, 96, 0.9);
+  color: azure;
+  padding: 15px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer-content a:hover{
+  color: #24252a;
+}
+.footer-content:hover {
+  animation:  shake 0.8s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
