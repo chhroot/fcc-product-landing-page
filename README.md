@@ -1,6 +1,6 @@
 # fcc-product-landing-page
 
-A basic landing page design
+A simple landing page design
 
 # :point_down:
 
