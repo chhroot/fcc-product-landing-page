@@ -1,6 +1,7 @@
 # fcc-product-landing-page
 
-A simple landing page design made using html and css
+A simple landing page design made using html and css.
+
 
 ## :point_down: The live preview
 
